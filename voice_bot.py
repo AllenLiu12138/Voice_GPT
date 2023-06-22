@@ -8,7 +8,7 @@ import threading
 import numpy as np
 import time
 
-openai.api_key = "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"
+openai.api_key = "Your API Key"
 
 sound_file = "typing.mp3" # replace with your typing sound file
 typing_sound = AudioSegment.from_file(sound_file)
