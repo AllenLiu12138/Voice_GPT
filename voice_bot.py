@@ -19,7 +19,7 @@ play_obj = None
 def transcribe_audio_to_text(audio):
     recognizer = sr.Recognizer()
     try:
-        return recognizer.recognize_google(audio, language='zh-CN')  # change to Chinese
+        return recognizer.recognize_google(audio, language='en-US')  # change to English
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
     except sr.RequestError as e:
@@ -47,7 +47,7 @@ def generate_response(prompt):
 
 def speak(text):
     global play_obj
-    tts = gTTS(text=text, lang='zh-CN')  # change to Chinese
+    tts = gTTS(text=text, lang='en-US')  # change to English
     filename = "output.mp3"
     tts.save(filename)
     audio = AudioSegment.from_mp3(filename)
@@ -64,7 +64,7 @@ def play_typing_sound():
             play_obj.stop()
 
 def main():
-    speak("我能帮你什么？")  # change to Chinese
+    speak("How can I assist you?")  # change to English
     while True:
         with sr.Microphone() as source:
             recognizer = sr.Recognizer()
