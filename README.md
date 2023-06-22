@@ -22,7 +22,6 @@ This is an AI-powered voice assistant that listens to user commands, generates r
 
 2. Install the required Python packages using the following command:
 
-```bash
 pip install openai speechrecognition gTTS pydub simpleaudio numpy
 Replace "Your API Key" with your OpenAI API key in the source code.
 
