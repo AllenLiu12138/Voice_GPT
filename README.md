@@ -1,4 +1,4 @@
-# If this is helpful, please star me.
+# If this is helpful, please Star me.
 
 # Voice_GPT
 
